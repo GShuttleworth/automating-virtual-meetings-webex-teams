@@ -42,7 +42,9 @@ def createRoom(roomName):
 
 def addUsers(user_emails, roomId):
     # Adds new users stored in user_emails
-    for user_email in user_emails.index:
+
+    for user_email in user_emails:
+        print(user_email, "\n")
         url = "https://api.ciscospark.com/v1/memberships"
         payload = {"roomId": roomId, "personEmail": user_email}
         headers = {
@@ -77,15 +79,26 @@ def displayDoc():
 
 
 def main():
-    filename = "email_addresses.xlsx"  # File containing email_addresses
-    room_name = "My New Room"  # New room name
-    message = "Welcome!"  # Message to send to new room
-    user_emails = pd.read_excel(
-        filename, sheet_name="Sheet1", index_col="Email Address"
-    )
-    roomId = createRoom(room_name)  # Creates a new room and returns roomId
-    addUsers(user_emails, roomId)  # Adds new user to room
-    sendMessage(message, roomId)  # Sends message to new room
+    data = pd.read_excel("email_addresses.xlsx")  # File containing meeting data
+    rows = len(data)
+    r = 0
+    while r < rows:
+        # New room name
+        room_name = data.iloc[r]['Room Name']
+
+        # Message to send to new room
+        message = data.iloc[r]['Welcome Message']
+
+        # Obtain participant emails
+        participants = data.iloc[r]['Email Address']
+        participants = participants.split(', ') #change data type from str to list so individual emails can be accessed later
+
+        roomId = createRoom(room_name)  # Creates a new room and returns roomId
+        addUsers(participants, roomId)  # Adds new user to room
+        sendMessage(message, roomId)  # Sends message to new room
+
+        r = r + 1 #increment r so the next row can be read
+    
     displayDoc()
 
 
