@@ -44,7 +44,6 @@ def addUsers(user_emails, roomId):
     # Adds new users stored in user_emails
 
     for user_email in user_emails:
-        print(user_email, "\n")
         url = "https://api.ciscospark.com/v1/memberships"
         payload = {"roomId": roomId, "personEmail": user_email}
         headers = {
