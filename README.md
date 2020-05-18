@@ -1,6 +1,6 @@
 # Automating the creation of virtual meetings with Webex Teams
 
-As many physical meetings have been cancelled, we are all using collaboration tools to keep meetings, conferences and events going, most likely, doing this through Webex teams.
+As many physical meetings have been cancelled, we are all using collaboration tools to keep meetings, conferences and events going, most likely doing this through Webex teams.
 But digitising tens or hundreds of meetings can introduce a LOT of admin overhead if you do this one at a time. Cut the manual overhead and save yourself some time. Deliver your virtual meeting rooms using code. Python code.
 
 This code creates Webex Teams rooms and invites the appropriate participants by importind meeting data from a spreadsheet, all through the Webex Teams APIs and a some simple python code.
