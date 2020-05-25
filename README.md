@@ -15,7 +15,6 @@ In this code we leverage a Bot to create the virtual rooms, add the participants
 
 ## How to create a Bot
 
-On the [Webex developer page](www.developer.webex.com), sign in, select 'Start Building Apps' -> 'Create New App'. Fill in the simple form (be sure to save your Bot Token somewhere safe, as you will need to substitute that into the code) and voila, your bot will be ready!
+On the [Webex developer page](www.developer.webex.com), sign in, select 'Start Building Apps' -> 'Create New App'. Fill in the simple form (be sure to save your Bot Token somewhere safe, as you will need to substitute that into the code) and voilà, your bot will be ready!
 
 #### Do get in touch and let us know how it goes!
-
