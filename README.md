@@ -13,8 +13,16 @@ Cisco Webex Teams is a powerful all-in-one collaboration tool that allows messag
 What's even better is that it exposes APIs which make things so much simpler for us :) 
 In this code we leverage a Bot to create the virtual rooms, add the participants and send a welcome message.
 
-## How to create a Bot
+## Using this code
+
+### Step 1: Create a Bot
 
 On the [Webex developer page](www.developer.webex.com), sign in, select 'Start Building Apps' -> 'Create New App'. Fill in the simple form (be sure to save your Bot Token somewhere safe, as you will need to substitute that into the code) and voilà, your bot will be ready!
+
+### Step 2: Adding your details to the code
+
+In line 105 of the python script, replace the string of characters after the word 'Bearer' with your own bot's token. 
+
+Remember to keep your excel file in the same folder as the python script in order to keep everything running smoothly. If you do prefer to store the two files separately, you'll need to adjust line 81 by including the path to the excel file. 
 
 #### Do get in touch and let us know how it goes!
