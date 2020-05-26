@@ -3,7 +3,7 @@
 
 """Sample Python script that creats a new room, and adds users from an excel spreadsheet.
 
-Copyright (c) 2019 Cisco and/or its affiliates.
+Copyright (c) 2020 Cisco and/or its affiliates.
 
 This software is licensed to you under the terms of the Cisco Sample
 Code License, Version 1.1 (the "License"). You may obtain a copy of the
@@ -19,8 +19,8 @@ IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
 or implied.
 
 """
-__author__ = "Trent Bosak <tbosak@cisco.com>"
-__copyright__ = "Copyright (c) 2019 Cisco and/or its affiliates."
+__author__ = "Chandni Panchal <cpanchal@cisco.com> Based on work by Trent Bosak <tbosak@cisco.com>"
+__copyright__ = "Copyright (c) 2020 Cisco and/or its affiliates."
 __license__ = "Cisco Sample Code License, Version 1.1"
 
 import json
