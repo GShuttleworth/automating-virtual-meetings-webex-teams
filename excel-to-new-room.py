@@ -19,7 +19,7 @@ IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
 or implied.
 
 """
-__author__ = "Chandni Panchal <cpanchal@cisco.com> Based on work by Trent Bosak <tbosak@cisco.com>"
+__author__ = "Chandni Panchal <cpanchal@cisco.com>, Greg Shuttleworth <gshuttle@cisco.com> Based on work by Trent Bosak <tbosak@cisco.com>"
 __copyright__ = "Copyright (c) 2020 Cisco and/or its affiliates."
 __license__ = "Cisco Sample Code License, Version 1.1"
 
